@@ -11,3 +11,12 @@ lint-staged.config.js
 
 Mailpit
 TakeOut
+
+postmark
+
+# ssh
+
+ssh/config
+host
+Hostname: ip address
+user forge
