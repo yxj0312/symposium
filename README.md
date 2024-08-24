@@ -20,3 +20,9 @@ ssh/config
 host
 Hostname: ip address
 user forge
+
+## Nouns/Resources
+
+- **Users**
+- **Talks**
+- **Conferences**
