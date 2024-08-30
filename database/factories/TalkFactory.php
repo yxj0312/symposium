@@ -13,7 +13,6 @@ class TalkFactory extends Factory
 {
     /**
      * Define the model's default state.
-     * personalfest
      *
      * @return array<string, mixed>
      */
