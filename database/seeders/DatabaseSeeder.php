@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
+     * test
      */
     public function run(): void
     {
