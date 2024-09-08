@@ -28,7 +28,15 @@ class TalkController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $validated = $request->validate([
+            'title' => 'required|max:255',
+            'length' => '',
+            'type' => 'required',
+            'abstract' => '',
+            'organzier_notes' => '',
+        ]);
+
+        return redirect->route('talks.index');
     }
 
     /**
