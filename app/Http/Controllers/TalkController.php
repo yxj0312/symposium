@@ -36,7 +36,7 @@ class TalkController extends Controller
             'organzier_notes' => '',
         ]);
 
-        return redirect->route('talks.index');
+        return redirect()->route('talks.index');
     }
 
     /**
