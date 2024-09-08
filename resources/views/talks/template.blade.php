@@ -1,4 +1,4 @@
-<form method="post" action="{{ route('talks.store')}}">
+<form method="post" action="{{ route('talks.store') }}">
   @csrf
   <div class="space-y-12">
     <div class="border-b border-gray-900/10 pb-12">
