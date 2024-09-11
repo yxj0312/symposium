@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Talk;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TalkController extends Controller
 {
@@ -30,11 +31,13 @@ class TalkController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required|max:255',
-            'length' => '',
+            'length' => 'required',
             'type' => 'required',
             'abstract' => '',
             'organzier_notes' => '',
         ]);
+
+        Auth::user()->talks()->create($validated);
 
         return redirect()->route('talks.index');
     }
