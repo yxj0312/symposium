@@ -13,7 +13,7 @@
               <span class="flex select-none items-center pl-3 text-gray-500 sm:text-sm">workcation.com/</span>
               <input type="text" name="title" id="title" autocomplete="title" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="janesmith">
               <x-input-error :message="$errors->get('length')" />
-              
+
             </div>
           </div>
         </div>
