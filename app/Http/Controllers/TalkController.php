@@ -13,7 +13,7 @@ class TalkController extends Controller
      */
     public function index()
     {
-        return 'list talks';
+        return view('talks.index', ['talks' => Auth::user()->talks]);
     }
 
     /**
@@ -26,7 +26,6 @@ class TalkController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     * test
      */
     public function store(Request $request)
     {
