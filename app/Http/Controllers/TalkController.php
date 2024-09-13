@@ -26,6 +26,7 @@ class TalkController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     * test
      */
     public function store(Request $request)
     {
