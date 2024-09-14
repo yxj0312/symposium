@@ -11,7 +11,7 @@
                 <div class="p-6 text-gray-900">
                     @foreach ($talks as talk) 
                         <li>
-                            {{ $talk->title }} ({{ $talk->type }} \ {{ $talk->length }})
+                           <a href="{{ route('talks.show', ['talk' => $talk]) }}"> ({{ $talk->type }} \ {{ $talk->length }}) </a>
                         </li>
                     @endforeach
                 </div>
