@@ -10,7 +10,9 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     @foreach ($talks as talk) 
-                        <li>{{ $talk->title }}</li>
+                        <li>
+                            {{ $talk->title }} ({{ $talk->type }} \ {{ $talk->length }})
+                        </li>
                     @endforeach
                 </div>
             </div>
