@@ -1,4 +1,4 @@
-<form method="POST" action="{{ }}">
+<form method="POST" action="{{   }}">
   @csrf
 
   <x-dropdown-link :href="route('logout')"
