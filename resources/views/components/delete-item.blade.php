@@ -1,9 +1,9 @@
-<form method="POST" action="{{ }}">
+<form method="POST" action="{{ $route }}">
   @csrf
 
-  <x-dropdown-link :href="route('logout')"
+  <a :href="route('logout')"
     onclick="event.preventDefault();
         this.closest('form').submit();">
-    {{ __('Log Out') }}
-  </x-dropdown-link>
+    {{ $text }}
+  </a>
 </form>
