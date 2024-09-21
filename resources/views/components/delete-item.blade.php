@@ -1,4 +1,5 @@
 <form method="POST" action="{{ $route }}">
+  @method('delete')
   @csrf
 
   <a :href="route('logout')"
