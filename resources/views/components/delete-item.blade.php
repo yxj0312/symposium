@@ -3,6 +3,7 @@
   @csrf
 
   <a :href="route('logout')"
+    class="underline"
     onclick="event.preventDefault();
         this.closest('form').submit();">
     {{ $text }}
