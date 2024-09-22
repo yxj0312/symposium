@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                    {{ $talk->title }}
-                   <x-delete-item :route="route('talks.delete', ['talk' => $talk])" text="Delete this talk" />
+                   <x-delete-item :route="route('talks.destroy', ['talk' => $talk])" text="Delete this talk" />
                 </div>
             </div>
         </div>
