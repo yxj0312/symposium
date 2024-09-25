@@ -30,8 +30,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('talks', [TalkController::class, 'index'])->name('talk.index');
     Route::delete('talks/{talk}', [TalkController::class, 'destroy'])->name('talk.destroy');
-    Route::get('talks/{talk}', [TalkController::class, 'show'])->name('talk.show');
     Route::get('talks/create', [TalkController::class, 'create'])->name('talk.create');
+    Route::get('talks/{talk}', [TalkController::class, 'show'])->name('talk.show');
     Route::post('talks', [TalkController::class, 'store'])->name('talk.store');
 
 });
