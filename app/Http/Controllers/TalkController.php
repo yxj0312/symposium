@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\TalkType;
 use App\Models\Talk;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rule;
 
 class TalkController extends Controller
 {
@@ -32,7 +34,7 @@ class TalkController extends Controller
         $validated = $request->validate([
             'title' => 'required|max:255',
             'length' => 'required',
-            'type' => 'required',
+            'type' => ['required', Rule::enum(TalkType::class)],
             'abstract' => '',
             'organzier_notes' => '',
         ]);
