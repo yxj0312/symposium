@@ -65,7 +65,18 @@ class TalkController extends Controller
      */
     public function update(Request $request, Talk $talk)
     {
-        //
+        
+        $validated = $request->validate([
+            'title' => 'required|max:255',
+            'length' => 'required',
+            'type' => ['required', Rule::enum(TalkType::class)],
+            'abstract' => '',
+            'organzier_notes' => '',
+        ]);
+
+        $talk->update($validated);
+
+        return redirect()->route('talks.show', ['talk' => $talk]);
     }
 
     /**
