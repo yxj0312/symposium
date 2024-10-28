@@ -65,7 +65,7 @@ class TalkController extends Controller
      */
     public function update(Request $request, Talk $talk)
     {
-        
+
         $validated = $request->validate([
             'title' => 'required|max:255',
             'length' => 'required',
