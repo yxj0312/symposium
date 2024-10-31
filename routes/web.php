@@ -34,6 +34,8 @@ Route::middleware('auth')->group(function () {
     Route::get('talks/create', [TalkController::class, 'create'])->name('talk.create');
     Route::get('talks/{talk}', [TalkController::class, 'show'])->name('talk.show');
     Route::post('talks', [TalkController::class, 'store'])->name('talk.store');
+    // test
+    
 });
 
 require __DIR__ . '/auth.php';
