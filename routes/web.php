@@ -35,7 +35,7 @@ Route::middleware('auth')->group(function () {
     Route::get('talks/{talk}', [TalkController::class, 'show'])->name('talk.show');
     Route::post('talks', [TalkController::class, 'store'])->name('talk.store');
     // test
-    // test2345&678)0111231312123124213123456712!"§!"§123
+    // test2345&678)0111231312123124213123456712!"§!"§1234465
 });
 
 require __DIR__ . '/auth.php';
